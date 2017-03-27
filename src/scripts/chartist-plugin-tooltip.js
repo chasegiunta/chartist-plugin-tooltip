@@ -34,7 +34,7 @@
       if (chart instanceof Chartist.Bar) {
         tooltipSelector = 'ct-bar';
       } else if (chart instanceof Chartist.Pie) {
-        // Added support for donut graph
+        // Added support for donut graphgunt
         if (chart.options.donut) {
           tooltipSelector = 'ct-slice-donut';
         } else {

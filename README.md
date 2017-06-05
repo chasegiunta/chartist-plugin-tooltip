@@ -6,6 +6,8 @@ Please visit http://gionkunz.github.io/chartist-js/plugins.html for more informa
 
 NPM package: https://www.npmjs.com/package/chartist-plugin-tooltips
 
+*Note the 's' on the end of the package name. *chartist-plugin-tooltip* with no 's' is a different package that does not appear to be actively maintained.*
+
 ## Available options and their defaults
 
 ```javascript

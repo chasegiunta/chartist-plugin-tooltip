@@ -109,7 +109,7 @@
             meta = '<span class="chartist-tooltip-meta">' + meta + '</span>';
 
             if (hasMeta) {
-              tooltipText += meta;
+              tooltipText += '( '+meta+' )';
             } else {
               // For Pie Charts also take the labels into account
               // Could add support for more charts here as well!
@@ -130,7 +130,7 @@
                 }
               }
               value = '<span class="chartist-tooltip-value">' + value + '</span>';
-              tooltipText += value;
+              tooltipText = value + tooltipText;
             }
           }
 

@@ -154,8 +154,8 @@
       }
 
       function setPosition(event) {
-        height = height || $toolTip.offsetHeight;
-        width = width || $toolTip.offsetWidth;
+        var height = height || $toolTip.offsetHeight;
+        var width = width || $toolTip.offsetWidth;
 
 
         var offsetX;

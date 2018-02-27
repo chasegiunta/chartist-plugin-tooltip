@@ -35,13 +35,21 @@
         tooltipSelector = 'ct-bar';
       } else if (chart.constructor.name ==  Chartist.Pie.prototype.constructor.name) {
         if (chart.options.donut) {
-          tooltipSelector = 'ct-slice-donut';
+          if (chart.options.donutSolid) {
+            tooltipSelector = 'ct-slice-donut-solid';
+          } else {
+            tooltipSelector = 'ct-slice-donut';
+          }
         } else {
           tooltipSelector = 'ct-slice-pie';
         }
       }
 
       var $chart = chart.container;
+      if ($chart) {
+        var $toolTip = $chart.querySelector('.chartist-tooltip');
+      }
+        
       var $toolTip = $chart.querySelector('.chartist-tooltip');
       if (!$toolTip) {
         $toolTip = document.createElement('div');
